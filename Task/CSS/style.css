@@ -61,3 +61,81 @@ h3{
     background-color: black;
     color: blanchedalmond;
 }
+.para1{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    font-style: italic;
+    text-align: justify;
+    /* text-align: center; */
+    font-variant :small-caps;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+    text-indent: 20px;
+}
+.anchor:link{
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+}
+.anchor:hover{
+    color: pink;
+}
+.anchor:active{
+    color: darkgreen;
+}
+.anchor:visited{
+    color: red;
+}
+.img1{
+    height: 200px;
+    width: 200px;
+    border: 2px solid green;
+    border-radius: 10px;
+    border-right: 5px dotted yellow;
+}
+.list li{
+    list-style-image: url("./istockphoto-1323529010-612x612.jpg");
+    color: beige;
+    
+}
+table,tr,td,th{
+    border: 3px solid white;
+    color: whitesmoke;
+}
+/* table{
+    width: 75%;
+} */
+/* td,th{
+    width: 50%;
+} */
+table{
+    width: 100vw;
+    height: 100vh;
+}
+th{
+    height: 25%;
+    vertical-align: top;
+}
+td{
+    text-align: center;
+    
+}
+tr:hover{
+    background-color: #d4cfcf;
+}
+p{
+    color: white;
+    text-align: justify;
+    margin: auto;
+}
+.para2{
+    color: yellow;
+    text-indent: 5px;
+    margin: 20px 30px 50px;
+    position: fixed;
+    top: 100px;
+    left: 75px;
+
+}
+
