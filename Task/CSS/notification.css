@@ -1,0 +1,29 @@
+.large_container{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(227, 150, 50);
+    margin-top: 30px;
+}
+.large_container p{
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px;
+}
+.small_container{
+    position: absolute;
+    top: -20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(232, 28, 28);
+    border-radius: 7px;
+}
+.small_container p{
+    text-align: center;
+    margin-top: 8px;
+    color: antiquewhite;
+    
+}

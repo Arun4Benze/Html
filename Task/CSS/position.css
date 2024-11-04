@@ -1,5 +1,6 @@
 .first{
     position: static;
+    margin-top: 50px;
     border: 2px solid red;
 }
 .second{
@@ -17,7 +18,7 @@
 }
 .fourth{
     position: absolute;
-    top: 180px;
+    top: 250px;
     right: 0;
     width: 200px;
     height: 100px;
@@ -59,3 +60,34 @@
     top: 0;
     border: 2px solid green;
 } */
+.notification img{
+    width: 30px;
+    height: 30px;
+    border: 50%;
+}
+.notification{
+    position: relative;
+    top: 100px;
+    /* left: 600px; */
+}
+.count{
+    position: absolute;
+    top: -25px;
+    left: 22px;
+}
+.count p{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* .sticky{
+    position: sticky;
+    left: 200px;
+} */
+.notification{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

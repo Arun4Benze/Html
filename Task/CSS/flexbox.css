@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:center;
+    align-items: center;
+    border: 1px solid red;
+    width: 800px;
+    height: 500px;
+    background-color: antiquewhite;
+}
+.items{
+    border:  1px solid green;
+    width: 55px;
+    height: 55px;
+    background-color: hotpink;
+    /* margin: 20px; */
+}
