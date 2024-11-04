@@ -1,0 +1,93 @@
+.first{
+    position: static;
+    margin-top: 50px;
+    border: 2px solid red;
+}
+.second{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 2px solid red;
+}
+.third{
+    position: relative;
+    left: 30px;
+    border: 2px solid red;
+    top: 20px;
+}
+.fourth{
+    position: absolute;
+    top: 250px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 2px solid red;
+}
+.fifth{
+    position:relative;
+    top: 50px;
+    /* margin-top: 20px; */
+    width: 500px;
+    height: 400px;
+    border: 2px solid red;
+
+}
+.fifth img{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 150px;
+    left: 50px;
+}
+.relative{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 2px solid yellow;
+    top: 80px;
+}
+.absolute{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border: 2px solid yellow;
+    top: 80px;
+    left: 30px;
+}
+/* .sticky{
+    position: sticky;
+    top: 0;
+    border: 2px solid green;
+} */
+.notification img{
+    width: 30px;
+    height: 30px;
+    border: 50%;
+}
+.notification{
+    position: relative;
+    top: 100px;
+    /* left: 600px; */
+}
+.count{
+    position: absolute;
+    top: -25px;
+    left: 22px;
+}
+.count p{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* .sticky{
+    position: sticky;
+    left: 200px;
+} */
+.notification{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

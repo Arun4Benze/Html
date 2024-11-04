@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    margin-left: 20px;
+    /* left: 0; */
+}
+.search{
+    width: 40%;
+    display: flex;
+    background-color: rgb(221, 223, 226);
+    border-radius: 8px;
+}
+.search input{
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    background-color: rgb(221, 223, 226);
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: 40px;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+}
+.login:hover{
+    background-color: rgb(81, 81, 239);
+}
+.login p{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+}
+.right_side{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: green; */
+    width: 40%;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.seller{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* footer */
+.footer_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(48, 44, 44);
+    color: white;
+    margin: 0;
+    /* align-items: center; */
+}
+.footer_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 50% */
+}
+.about,.group_companies,.help,.consumer_policy{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+.about ul,.group_companies ul,.help ul,.consumer_policy ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
+    padding-left: 0px;
+    
+}
+.about h6,.group_companies h6,.help h6,.consumer_policy h6{
+    font-size: 16px;
+    color: grey;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.mail_us h6,.address h6{
+    font-size: 16px;
+    color: grey;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.about ul li,.group_companies ul li,.help ul li,.consumer_policy ul li{
+    list-style-type: none;
+    font-size: 16px;
+    margin: 0;
+}
+
+.container_right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.mail_us,.address{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+
+.paras p{
+    font-size: 16px;
+    line-height: 7px;
+    margin:10px 10px 10px 0px;
+
+}
+.social{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.address .para p{
+    font-size: 16px;
+    line-height: 7px;
+    margin:10px 10px 10px 0px;
+}
+.line{
+    border-right: 1px solid grey;
+    margin-left: 50px;
+}
