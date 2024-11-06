@@ -146,4 +146,6 @@
 .line{
     border-right: 1px solid grey;
     margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
