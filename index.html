@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awsome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-body-info background fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="img-fluid" src="./asset/logo.svg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <form class="d-flex form-content" role="search">
+                    <div class="search-container">
+                        <img class="img-fluid" src="./asset/search.svg" alt="search">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search for products ,brands and more" aria-label="Search">
+                    </div>
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-right">
+                    <li class="nav-item">
+                        <div class="dropdown login-items">
+
+                            <a class="nav-link active dropdown-toggle" aria-current="page" href="#"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="img-fluid" src="./asset/login.svg" alt="login">
+                                Login
+                                <!-- <i class="fa fa-caret-down"></i> -->
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-header" href="#">New Customer</a></li>
+                                <li class="dropdown-divider" href="#"></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item right">
+                        <img class="img-fluid" src="./asset/cart.svg" alt="cart">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item right">
+                        <img class="img-fluid" src="./asset/seller.svg" alt="cart">
+                        <a class="nav-link" href="#">Become a seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <img class="img-fluid" src="./asset/dot.svg" alt="cart">
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- refresh button -->
+    <div class="text-center refresh fixed-bottom">
+        <button class="btn btn-primary" type="button">
+            <!-- <span class="spinner-border spinner-border-md" aria-hidden="true"></span> -->
+            <span role="status"> <i class="fas fa-sync"></i>
+                Refresh page</span>
+          </button>
+      </div>
+    <!-- products list -->
+    <div class="row-md-12" style="margin-top: 80px;">
+        <div class="container-fluid cont">
+            <div class="col-md-12">
+                <div class="list-group d-flex flex-row">
+                    <a href="#" class="list-group-item list-group-item-action column" aria-current="true">
+                        <div class="d-flex align-items-center contents">
+                            <img src="./asset/groccery.webp" alt="groccery" class="img-fluid">
+                            <h3 class="mb-1">Grocery</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action column" aria-current="true">
+                        <div class="d-flex align-items-center contents">
+                            <img src="./asset/mobiles.webp" alt="mobiles" class="img-fluid">
+                            <h3 class="mb-1">Mobiles</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action column" aria-current="true">
+                        <div class="d-flex align-items-center contents">
+                            <img src="./asset/fashion.png" alt="Fashion" class="img-fluid">
+                            <h3 class="mb-1">Fashion</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action column" aria-current="true">
+                        <div class="d-flex align-items-center contents">
+                            <img src="./asset/electronics.png" alt="Electronics" class="img-fluid">
+                            <h3 class="mb-1">Electronics</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action column" aria-current="true">
+                        <div class="d-flex align-items-center contents">
+                            <img src="./asset/furniture.png" alt="Home & Furniture" class="img-fluid">
+                            <h3 class="mb-1">Home & Furniture</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action column" aria-current="true">
+                        <div class="d-flex align-items-center contents">
+                            <img src="./asset/appliances.webp" alt="Appliances" class="img-fluid">
+                            <h3 class="mb-1">Appliances</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action column" aria-current="true">
+                        <div class="d-flex align-items-center contents">
+                            <img src="./asset/flight.webp" alt="Flight" class="img-fluid">
+                            <h3 class="mb-1">Flight booking</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action column" aria-current="true">
+                        <div class="d-flex align-items-center contents">
+                            <img src="./asset/toys.avif" alt="Beauty, Toys & more" class="img-fluid">
+                            <h3 class="mb-1">Beauty, Toys & more</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action column" aria-current="true">
+                        <div class="d-flex align-items-center contents">
+                            <img src="./asset/two wheeler.png" alt="Two wheeler" class="img-fluid">
+                            <h3 class="mb-1">Two wheeler</h3>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- coursel -->
+        <div class="col-md-12">
+            <div class="container-fluid">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active coursel" data-bs-interval="1000">
+                            <img src="./asset/coursel1.webp" class="d-block" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item coursel" data-bs-interval="2000">
+                            <img src="./asset/coursel2.webp" class="d-block" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item coursel" data-bs-interval="2000">
+                            <img src="./asset/coursel3.webp" class="d-block" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item coursel" data-bs-interval="2000">
+                            <img src="./asset/coursel4.webp" class="d-block" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-btn-left" type="button"
+                        data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-btn-right" type="button"
+                        data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- best of electronics -->
+    <div class="row">
+        <div class="col-md-10">
+            <div class="container size">
+                <div class="upper">
+                    <h3>Best of Electronics</h3>
+                    <div>
+                        <i class="fas fa-arrow-right"></i>
+
+                    </div>
+                </div>
+                <div class="lower">
+                    <div class="card item">
+                        <img src="./asset/prod1.webp" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Best true wireless headphone</p>
+                            <h3>Grab now</h3>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="./asset/prod2.jfif" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Best selling portable speaker</p>
+                            <h3>from &#8377;499
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="./asset/prod3.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Projector</p>
+                            <h3>from &#8377;1499</h3>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="./asset/prod4.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Best camera with adjustable lens</p>
+                            <h3>from &#8377;19999</h3>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="./asset/prod5.avif" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Airpods</p>
+                            <h3>from &#8377;399</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="container size1">
+                <img src="./asset/flyfk.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- beauty toys -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container-fluid size3">
+                <div class="upper">
+                    <h3>Beauty ,food ,toys and more</h3>
+                    <div>
+                        <i class="fas fa-arrow-right"></i>
+
+                    </div>
+                </div>
+                <div class="lower">
+                    <div class="card item">
+                        <img src="./asset/toy1.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Best electric cycles</p>
+                            <h3>from &#8377;24999</h3>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="./asset/toy2.jfif" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Best gear cycles</p>
+                            <h3>from &#8377;14999</h3>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="./asset/toy3.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Gym equipments</p>
+                            <h3>from &#8377;999</h3>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="./asset/toy4.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">musical equipments</p>
+                            <h3>from &#8377;799</h3>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="./asset/toy5.jfif" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Food items</p>
+                            <h3>from &#8377;99</h3>
+                        </div>
+                    </div>
+                    <div class="card item">
+                        <img src="./asset/toy6.jfif" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Treadmill</p>
+                            <h3>from &#8377;18999</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gadgets and appliances -->
+    <div class="row" style="height: 650px; background-color: rgb(235, 239, 239);">
+        <div class="col-md-4 four" style="background-color:white;">
+            <div class="container-fluid">
+                <div class="upper">
+                    <h3>Best Gadgets & Aplliances</h3>
+                    <div>
+                        <i class="fas fa-arrow-right"></i>
+
+                    </div>
+                </div>
+                <div class="lower1">
+                    <div class="card item1">
+                        <img src="./asset/mobiles.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Mobiles</p>
+                            <h3 class="text-success">Min 50% off</h3>
+                        </div>
+                    </div>
+                    <div class="card item1">
+                        <img src="./asset/hairdryer.jfif" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Hair Dryer</p>
+                            <h3 class="text-success">Min 50% off</h3>
+                        </div>
+                    </div>
+                    <div class="card item1">
+                        <img src="./asset/tower.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Tower PC</p>
+                            <h3 class="text-success">Min 30% off</h3>
+                        </div>
+                    </div>
+                    <div class="card item1">
+                        <img src="./asset/drone.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Drone camera</p>
+                            <h3 class="text-success">Min 30% off</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 seven"
+            style="background-color:grey; background-image: url(./asset/i-Phone-16-Pro-Max-Apple-leaks-concept-transparent-PNG-image.png);background-repeat: no-repeat; background-position: center;background-size: cover;">
+            <div class="container-fluid portions">
+                <div class="top">
+                    <img src="./asset/Flipkart-Emblem.png" alt="">
+                    <h2>Top Selling Smartphones</h2>
+                    <p>Lastest technology, best brands</p>
+                </div>
+                <div class="bottom">
+                    <div class="btn btn-light">
+                        <b>Explore Now</b>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- passage  -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container-fluid passages">
+                <h5>Flipkart: The One-stop Shopping Destination</h5>
+                <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. </p>
+                
+                <p>What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question. </p>
+                <h5>Flipkart plus</h5>
+                <p>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more! </p>
+                <h5>No cost EMI</h5>
+                <p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
+                <h5>EMI on debit cards</h5>
+                <p>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply. </p>
+            </div>
+        </div>
+    </div>
+    <!-- footer page -->
+    <div class="container-fluid" style="background-color:black;">
+        <div class="row">
+            <div class="col-md-7 d-flex">
+                <div class="parts d-flex flex-column align-items-start m-3 flex-div">
+                    <h5>ABOUT</h5>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                contact us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> about us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> careers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> flipkart stories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> press</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> corporate information</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="parts d-flex flex-column align-items-start m-3 flex-div">
+                    <h5>GROUP COMPANIES</h5>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Myntra
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> cleartrip</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> shopsy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="parts d-flex flex-column align-items-start m-3 flex-div">
+                    <h5>HELP</h5>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Payment
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> shipping</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> return and cancellation</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="parts d-flex flex-column align-items-start m-3 flex-div">
+                    <h5>CONSUMER POLICY</h5>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                return and cancellation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> security</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> privacy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> sitemap</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action"> Greviance redressal</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item list-group-item-action">EPR compliances</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="line"></div>
+
+            </div>
+            <div class="col-md-5 d-flex">
+                <div class="parts d-flex flex-column align-items-start m-3 flex-div div1">
+                    <div>
+                        <h5>MAIL US</h5>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>
+                                <p href="#" class="list-group-item list-group-item-action">
+                                    Flipkart Internet Private Limited,
+                                </p>
+                            </li>
+                            <li>
+                                <p href="#" class="list-group-item list-group-item-action">Buildings Alyssa, Begonia &</p>
+                            </li>
+                            <li>
+                                <p href="#" class="list-group-item list-group-item-action"> Clove Embassy Tech Village,</p>
+                            </li>
+                            <li>
+                                <p href="#" class="list-group-item list-group-item-action">Outer Ring Road,</p>
+                            </li>
+                            <li>
+                                <p href="#" class="list-group-item list-group-item-action">Village Devarabeesanahalli,</p>
+                            </li>
+                            <li>
+                                <p href="#" class="list-group-item list-group-item-action">Bengaluru, 560103,</p>
+                            </li>
+                            <li>
+                                <p href="#" class="list-group-item list-group-item-action">Karnataka, India</p>
+                            </li>
+    
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <h5>Social</h5>
+                        <div>
+                            <img src="./asset/fb.svg" alt="">
+                            <img src="./asset/x.svg" alt="">
+                            <img src="./asset/YoutubeLogo-8425c4.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="parts d-flex flex-column align-items-start m-3 flex-div">
+                    <h5>REGISTERED OFFICE ADDRESS</h5>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>
+                            <p href="#" class="list-group-item list-group-item-action">
+                                Flipkart Internet Private Limited,
+                            </p>
+                        </li>
+                        <li>
+                            <p href="#" class="list-group-item list-group-item-action">Buildings Alyssa, Begonia &</p>
+                        </li>
+                        <li>
+                            <p href="#" class="list-group-item list-group-item-action"> Clove Embassy Tech Village,</p>
+                        </li>
+                        <li>
+                            <p href="#" class="list-group-item list-group-item-action">Outer Ring Road, </p>
+                        </li>
+                        <li>
+                            <p href="#" class="list-group-item list-group-item-action">Devarabeesanahalli Village,</p>
+                        </li>
+                        <li>
+                            <p href="#" class="list-group-item list-group-item-action"> Bengaluru, 560103,</p>
+                        </li>
+                        <li>
+                            <p href="#" class="list-group-item list-group-item-action"> Karnataka, India</p>
+                        </li>
+                        <li>
+                            <p href="#" class="list-group-item list-group-item-action">CIN : U51109KA2012PTC066107</p>
+                        </li>
+                        <li>
+                            <p href="#" class="list-group-item list-group-item-action">Telephone: <a href="tel:044-45614700">044-45614700</a>/<a href="tel:044-67415800">044-67415800</a></p>
+                        </li>
+
+                    </ul>
+                </div>
+                    </div>
+                    
+                </div>
+            </div>
+                
+    <!-- <div class="row">
+        
+      </div> -->
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
